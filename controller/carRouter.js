@@ -12,7 +12,7 @@ router.post("/add",async(req,res)=>{
     })
 })
 
-router.post("/view",async(req,res)=>{
+router.get("/view",async(req,res)=>{
     let data=await carModel.find()
     res.json(data)
 })
